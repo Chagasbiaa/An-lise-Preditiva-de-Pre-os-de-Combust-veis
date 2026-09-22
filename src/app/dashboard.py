@@ -9,6 +9,15 @@ what-if (Objetivo F): o usuário ajusta câmbio/Brent/IPCA e um toggle de
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+# O Streamlit Community Cloud executa este arquivo sem colocar a raiz do
+# repositório no sys.path (diferente de rodar localmente com
+# `python -m streamlit run ...`), o que quebraria os imports `from src...`
+# abaixo. Garantimos a raiz no sys.path manualmente antes deles.
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
+
 import joblib
 import json
 import pandas as pd
