@@ -1,0 +1,26 @@
+# Ambiente Python
+.venv/
+__pycache__/
+*.pyc
+
+# Credenciais
+.env
+
+# Dados brutos/intermediários (grandes, reproduzíveis pelos scripts de
+# coleta/limpeza — só o banco final data/fuel_prices.db é versionado, via
+# Git LFS, para o deploy no Streamlit Community Cloud funcionar com dados
+# reais sem precisar refazer a coleta).
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Notebooks - checkpoints
+.ipynb_checkpoints/
+
+# SO / editor
+.DS_Store
+.vscode/
+
+# Estado local de sessão (não é código do projeto)
+.claude/scheduled_tasks.lock

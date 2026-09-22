@@ -1,0 +1,59 @@
+{
+  "id_municipio": "5300108",
+  "produto": "Glp",
+  "treinado_em": "2026-09-22T03:10:49.157460+00:00",
+  "n_linhas_total": 822,
+  "n_linhas_treino_validacao": 770,
+  "n_linhas_holdout": 52,
+  "n_splits_cv": 5,
+  "colunas_feature": [
+    "preco_medio",
+    "preco_lag4",
+    "preco_lag8",
+    "preco_lag12",
+    "preco_media_movel_4",
+    "preco_desvio_movel_4",
+    "usd_brl",
+    "brent_usd_bbl",
+    "ipca_variacao_mensal",
+    "evento_invasao_ucrania_inicio",
+    "evento_invasao_ucrania_semanas_desde_inicio"
+  ],
+  "metricas_cv": {
+    "mae": {
+      "media": 8.251423280377946,
+      "desvio_padrao": 6.263214542149303
+    },
+    "rmse": {
+      "media": 9.968052966757488,
+      "desvio_padrao": 7.451916395664557
+    },
+    "mape": {
+      "media": 0.105446714506059,
+      "desvio_padrao": 0.06892134301364747
+    },
+    "r2": {
+      "media": -1.975220619744754,
+      "desvio_padrao": 2.747106388555731
+    }
+  },
+  "metricas_holdout": {
+    "mae": 1.193720265011148,
+    "rmse": 1.7515165445319267,
+    "mape": 0.011230818091810714,
+    "r2": 0.23611186335534762
+  },
+  "feature_importances": {
+    "preco_medio": 0.6135445854978393,
+    "preco_media_movel_4": 0.2692464649920806,
+    "preco_lag4": 0.07623233391742047,
+    "preco_lag8": 0.038364763652283224,
+    "preco_lag12": 0.001629059595032365,
+    "brent_usd_bbl": 0.0003742338093268695,
+    "usd_brl": 0.00024090987355975083,
+    "ipca_variacao_mensal": 0.00019126561335366395,
+    "evento_invasao_ucrania_semanas_desde_inicio": 0.00010375153810015954,
+    "preco_desvio_movel_4": 7.262523855877938e-05,
+    "evento_invasao_ucrania_inicio": 6.272444756237031e-09
+  }
+}

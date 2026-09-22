@@ -1,0 +1,59 @@
+{
+  "id_municipio": "1400100",
+  "produto": "Diesel",
+  "treinado_em": "2026-09-22T03:23:26.461144+00:00",
+  "n_linhas_total": 626,
+  "n_linhas_treino_validacao": 574,
+  "n_linhas_holdout": 52,
+  "n_splits_cv": 5,
+  "colunas_feature": [
+    "preco_medio",
+    "preco_lag4",
+    "preco_lag8",
+    "preco_lag12",
+    "preco_media_movel_4",
+    "preco_desvio_movel_4",
+    "usd_brl",
+    "brent_usd_bbl",
+    "ipca_variacao_mensal",
+    "evento_invasao_ucrania_inicio",
+    "evento_invasao_ucrania_semanas_desde_inicio"
+  ],
+  "metricas_cv": {
+    "mae": {
+      "media": 0.49476237959857305,
+      "desvio_padrao": 0.42489309650650864
+    },
+    "rmse": {
+      "media": 0.5957008516107372,
+      "desvio_padrao": 0.48251458890892923
+    },
+    "mape": {
+      "media": 0.09810417772235859,
+      "desvio_padrao": 0.05643129070140882
+    },
+    "r2": {
+      "media": -1.8609552654245918,
+      "desvio_padrao": 2.402558280955431
+    }
+  },
+  "metricas_holdout": {
+    "mae": 0.07930414698015623,
+    "rmse": 0.13369845247943973,
+    "mape": 0.010659605503905508,
+    "r2": 0.8828131669994832
+  },
+  "feature_importances": {
+    "preco_medio": 0.40180162494624766,
+    "preco_media_movel_4": 0.257955563855274,
+    "preco_lag12": 0.134860852202284,
+    "preco_lag4": 0.10155795782783314,
+    "preco_lag8": 0.09905623046566185,
+    "usd_brl": 0.0034021372147769527,
+    "brent_usd_bbl": 0.000727908705852823,
+    "evento_invasao_ucrania_semanas_desde_inicio": 0.00033192717484953983,
+    "ipca_variacao_mensal": 0.0001734694172646547,
+    "preco_desvio_movel_4": 0.00013232103251300002,
+    "evento_invasao_ucrania_inicio": 7.1574424019044944e-09
+  }
+}

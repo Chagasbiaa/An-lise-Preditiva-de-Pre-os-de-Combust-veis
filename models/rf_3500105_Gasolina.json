@@ -1,0 +1,59 @@
+{
+  "id_municipio": "3500105",
+  "produto": "Gasolina",
+  "treinado_em": "2026-09-22T03:01:49.724242+00:00",
+  "n_linhas_total": 519,
+  "n_linhas_treino_validacao": 467,
+  "n_linhas_holdout": 52,
+  "n_splits_cv": 5,
+  "colunas_feature": [
+    "preco_medio",
+    "preco_lag4",
+    "preco_lag8",
+    "preco_lag12",
+    "preco_media_movel_4",
+    "preco_desvio_movel_4",
+    "usd_brl",
+    "brent_usd_bbl",
+    "ipca_variacao_mensal",
+    "evento_invasao_ucrania_inicio",
+    "evento_invasao_ucrania_semanas_desde_inicio"
+  ],
+  "metricas_cv": {
+    "mae": {
+      "media": 0.5958853287325933,
+      "desvio_padrao": 0.5120454784892435
+    },
+    "rmse": {
+      "media": 0.664016468516006,
+      "desvio_padrao": 0.5671757992251772
+    },
+    "mape": {
+      "media": 0.12431655281282364,
+      "desvio_padrao": 0.07421501284710486
+    },
+    "r2": {
+      "media": -3.3264688373915106,
+      "desvio_padrao": 2.2233694220862668
+    }
+  },
+  "metricas_holdout": {
+    "mae": 0.07660026785714286,
+    "rmse": 0.11598127642189644,
+    "mape": 0.012155018112581153,
+    "r2": 0.8226279928099091
+  },
+  "feature_importances": {
+    "preco_medio": 0.875670337062033,
+    "preco_lag12": 0.05033467047675934,
+    "preco_media_movel_4": 0.03191501293603197,
+    "preco_lag8": 0.03107736610049033,
+    "preco_lag4": 0.0068961510440423476,
+    "usd_brl": 0.002633286794911396,
+    "evento_invasao_ucrania_semanas_desde_inicio": 0.0006656135348185574,
+    "brent_usd_bbl": 0.00037937576917319366,
+    "preco_desvio_movel_4": 0.0002618680934677397,
+    "ipca_variacao_mensal": 0.00016618348519806028,
+    "evento_invasao_ucrania_inicio": 1.347030740774445e-07
+  }
+}

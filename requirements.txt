@@ -1,0 +1,12 @@
+pandas
+numpy
+scikit-learn
+shap
+plotly
+streamlit
+basedosdados
+requests
+python-dotenv
+pyarrow
+joblib
+pytest

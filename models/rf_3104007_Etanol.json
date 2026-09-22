@@ -1,0 +1,59 @@
+{
+  "id_municipio": "3104007",
+  "produto": "Etanol",
+  "treinado_em": "2026-09-22T03:07:56.786430+00:00",
+  "n_linhas_total": 561,
+  "n_linhas_treino_validacao": 509,
+  "n_linhas_holdout": 52,
+  "n_splits_cv": 5,
+  "colunas_feature": [
+    "preco_medio",
+    "preco_lag4",
+    "preco_lag8",
+    "preco_lag12",
+    "preco_media_movel_4",
+    "preco_desvio_movel_4",
+    "usd_brl",
+    "brent_usd_bbl",
+    "ipca_variacao_mensal",
+    "evento_invasao_ucrania_inicio",
+    "evento_invasao_ucrania_semanas_desde_inicio"
+  ],
+  "metricas_cv": {
+    "mae": {
+      "media": 0.3162300630832023,
+      "desvio_padrao": 0.20244970556016603
+    },
+    "rmse": {
+      "media": 0.44322646671920374,
+      "desvio_padrao": 0.32140939308242555
+    },
+    "mape": {
+      "media": 0.08604438802534387,
+      "desvio_padrao": 0.059458480838777875
+    },
+    "r2": {
+      "media": -0.3698722043239381,
+      "desvio_padrao": 1.386116209754344
+    }
+  },
+  "metricas_holdout": {
+    "mae": 0.04371321581196725,
+    "rmse": 0.05995948818912306,
+    "mape": 0.009428225262853002,
+    "r2": 0.920365354721232
+  },
+  "feature_importances": {
+    "preco_medio": 0.8428421632464393,
+    "preco_media_movel_4": 0.13705531045135197,
+    "usd_brl": 0.015629592218276745,
+    "evento_invasao_ucrania_semanas_desde_inicio": 0.0013970171872933947,
+    "preco_lag8": 0.0008980367424675497,
+    "brent_usd_bbl": 0.0006604779862745175,
+    "preco_desvio_movel_4": 0.0005885680344591259,
+    "preco_lag12": 0.0003286815532042,
+    "preco_lag4": 0.00030251641975350947,
+    "ipca_variacao_mensal": 0.0002975938945595226,
+    "evento_invasao_ucrania_inicio": 4.2265920097232894e-08
+  }
+}
